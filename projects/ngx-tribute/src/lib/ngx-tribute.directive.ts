@@ -6,7 +6,7 @@ import Tribute, {TributeCollection, TributeOptions} from 'tributejs';
     selector: '[ngxTribute]',
     exportAs: 'ngx-tribute'
 })
-export class NgxTributeDirective<T> implements OnInit, OnDestroy {
+export class NgxTributeDirective<T extends {}> implements OnInit, OnDestroy {
     @Input('ngxTribute')
     options: TributeOptions<T>;
 
